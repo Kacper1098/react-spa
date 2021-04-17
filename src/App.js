@@ -1,14 +1,21 @@
 import './App.css';
 import {Route, Switch} from "react-router";
 import {BrowserRouter} from "react-router-dom";
-import Nav from "./Nav/Nav";
+import MyNav from "./MyNav/MyNav";
+import MyFooter from "./MyFooter/ MyFooter";
+import Pricing from "./Pricing/Pricing";
 
-const routes = []
+const routes = [
+    {
+        path: '/pricing',
+        component: Pricing
+    }
+]
 
 function App() {
     return (
-        <BrowserRouter>
-            <Nav/>
+        <BrowserRouter basename="/react-spa">
+            <MyNav/>
             <Switch>
                 {
                     routes.map(route => (
@@ -18,6 +25,7 @@ function App() {
                     ))
                 }
             </Switch>
+            <MyFooter/>
         </BrowserRouter>
     );
 }
