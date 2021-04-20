@@ -1,4 +1,5 @@
 import {Button, Card, Col, Container, Row} from "react-bootstrap";
+import React from "react";
 
 function Pricing() {
     return (
@@ -10,7 +11,7 @@ function Pricing() {
                 </Col>
             </Row>
             <Row>
-                <Col>
+                <Col sm={12} md={4} lg={4}>
                     <Card className={"text-center"}>
                         <Card.Body>
                             <Card.Header><h2>Free</h2></Card.Header>
@@ -22,7 +23,7 @@ function Pricing() {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col>
+                <Col sm={12} md={4} lg={4}>
                     <Card className={"text-center"}>
                         <Card.Body>
                             <Card.Header><h2>Pro</h2></Card.Header>
@@ -34,7 +35,7 @@ function Pricing() {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col>
+                <Col sm={12} md={4} lg={4}>
                     <Card className={"text-center"}>
                         <Card.Body>
                             <Card.Header><h2>Enterprise</h2></Card.Header>

@@ -4,11 +4,17 @@ import {BrowserRouter} from "react-router-dom";
 import MyNav from "./MyNav/MyNav";
 import MyFooter from "./MyFooter/ MyFooter";
 import Pricing from "./Pricing/Pricing";
+import React from "react";
+import Home from "./Home/Home";
 
 const routes = [
     {
         path: '/pricing',
         component: Pricing
+    },
+    {
+        path: '',
+        component: Home
     }
 ]
 
