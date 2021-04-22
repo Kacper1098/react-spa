@@ -6,8 +6,13 @@ import MyFooter from "./MyFooter/ MyFooter";
 import Pricing from "./Pricing/Pricing";
 import React from "react";
 import Home from "./Home/Home";
+import Contact from "./Contact/Contact";
 
 const routes = [
+    {
+        path: '/contact',
+        component: Contact
+    },
     {
         path: '/pricing',
         component: Pricing
